@@ -1554,76 +1554,84 @@
 
 <script>
   // ── PACK DATA (JSON) ──
-  const packs = [
-    {
-      id: "BP01",
-      name: "Small Birthday Pack",
-      icon: "🎈",
-      price: "$49",
-      originalPrice: "$65",
-      color: "#FF5C5C",
-      items: [
-        "10 Latex Balloons (Assorted)",
-        "Happy Birthday Banner",
-        "8 Party Hats",
-        "Confetti Pack",
-        "8 Cake Candles",
-        "Gift Ribbon & Bow"
-      ]
-    },
-    {
-      id: "BP02",
-      name: "Regular Birthday Pack",
-      icon: "🎂",
-      price: "$89",
-      originalPrice: "$120",
-      color: "#7B5EA7",
-      featured: true,
-      badge: "Most Popular",
-      items: [
-        "20 Latex + Foil Balloons",
-        "LED Fairy Lights (10m)",
-        "Happy Birthday Banner",
-        "16 Party Hats & Horns",
-        "Confetti Cannons x2",
-        "Personalized Cake Topper",
-        "Balloon Arch Strip",
-        "Photo Booth Props Kit"
-      ]
-    },
-    {
-      id: "BP03",
-      name: "Large Party Pack",
-      icon: "🎊",
-      price: "$149",
-      originalPrice: "$200",
-      color: "#FFD23F",
-      items: [
-        "40+ Latex & Foil Balloons",
-        "Full Balloon Arch Kit",
-        "LED Fairy Lights (20m)",
-        "Customizable Backdrop",
-        "Confetti Cannons x4",
-        "Personalized Banners x2",
-        "Photo Booth Props Kit",
-        "Party Tableware Set (20 pax)",
-        "Flower Garland Decoration",
-        "Sparkler Candles Set"
-      ]
-    }
-  ];
+  // ── PACK DATA (ESSENTIAL PARTY PACKS) ──
+
+const packs = [
+  {
+    id: "BP01",
+    name: "Small Party Essentials Pack",
+    icon: "🎉",
+    pax: "10-12 People",
+    price: "Rs 3500",
+    color: "#FF5C5C",
+    items: [
+      "Paper Plates x12",
+      "Paper Cups x12",
+      "Paper Serviettes x25",
+      "Plastic Spoons x12",
+      "Cake Knife x1",
+      "Birthday Candles Set",
+      "Happy Birthday Banner",
+      "Party Hats x12"
+    ]
+  },
+
+  {
+    id: "BP02",
+    name: "Regular Party Essentials Pack",
+    icon: "🎂",
+    pax: "20-25 People",
+    price: "Rs 5500",
+    featured: true,
+    badge: "Most Popular",
+    color: "#7B5EA7",
+    items: [
+      "Paper Plates x25",
+      "Paper Cups x25",
+      "Paper Serviettes x50",
+      "Plastic Spoons x25",
+      "Cake Knife x1",
+      "Birthday Candles Set",
+      "Happy Birthday Banner",
+      "Party Hats x25",
+      "Confetti Pack"
+    ]
+  },
+
+  {
+    id: "BP03",
+    name: "Large Party Essentials Pack",
+    icon: "🎊",
+    pax: "40-50 People",
+    price: "Rs 8500",
+    color: "#FFD23F",
+    items: [
+      "Paper Plates x50",
+      "Paper Cups x50",
+      "Paper Serviettes x100",
+      "Plastic Spoons x50",
+      "Cake Knife x1",
+      "Birthday Candles Set",
+      "Happy Birthday Banner",
+      "Party Hats x40",
+      "Confetti Pack x2"
+    ]
+  }
+];
 
   // ── ADD-ONS DATA ──
-  const addons = [
-    { id: "AO1", emoji: "🌸", name: "Flower Bouquet", price: "+$25" },
-    { id: "AO2", emoji: "🎀", name: "Giant Bow Balloon", price: "+$15" },
-    { id: "AO3", emoji: "📸", name: "Photo Booth Kit", price: "+$30" },
-    { id: "AO4", emoji: "✨", name: "Sparkler Candles", price: "+$12" },
-    { id: "AO5", emoji: "🎤", name: "Bluetooth Speaker", price: "+$20" },
-    { id: "AO6", emoji: "🍾", name: "Champagne Flutes", price: "+$18" },
-    { id: "AO7", emoji: "💌", name: "Custom Card", price: "+$8" },
-    { id: "AO8", emoji: "🕯️", name: "Scented Candles Set", price: "+$22" }
-  ];
+  // ── ADD-ONS DATA ──
+
+const addons = [
+  { id: "AO1", emoji: "🎈", name: "Balloon Pack (20)", price: "+Rs 900" },
+  { id: "AO2", emoji: "🎀", name: "Number Balloon", price: "+Rs 1200" },
+  { id: "AO3", emoji: "🌸", name: "Flower Bouquet", price: "+Rs 2500" },
+  { id: "AO4", emoji: "✨", name: "Confetti Poppers (2)", price: "+Rs 600" },
+  { id: "AO5", emoji: "🎂", name: "Cake Topper", price: "+Rs 450" },
+  { id: "AO6", emoji: "🕯️", name: "Sparkler Candles", price: "+Rs 500" },
+  { id: "AO7", emoji: "💌", name: "Custom Greeting Card", price: "+Rs 350" },
+  { id: "AO8", emoji: "🌹", name: "Romantic Rose Set", price: "+Rs 1800" }
+];
 
   let selectedAddons = new Set();
 
